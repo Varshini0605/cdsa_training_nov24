@@ -1,9 +1,8 @@
-#include(stdio.h)
-int main()
+#include<stdio.h>
 int findSmallestDigit(int number)
 {
     int smallest = 9;
-    if numberb < 0){
+    if(number < 0){
         number = -number;
     }
     while (number > 0){
@@ -15,9 +14,10 @@ int findSmallestDigit(int number)
     }
     return smallest;
 }
+int main()
 {
     int number;
-    printf("Enter a number: ")
+    printf("Enter a number: ");
     scanf("%d", &number);
     int  smallestDigit = findSmallestDigit(number);
     printf("The smallest digit in %d\n",number,smallestDigit);
