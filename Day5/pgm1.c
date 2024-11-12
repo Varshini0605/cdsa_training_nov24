@@ -1,3 +1,4 @@
+// program for the number of elements in array
 #include <stdio.h>
 
 int main() 

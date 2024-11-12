@@ -1,3 +1,4 @@
+// pgm for string reversion
 #include <stdio.h>
 
 char *strCpy(char *destination, const char *source)

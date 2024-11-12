@@ -1,3 +1,4 @@
+// duplicate elements in array
 #include <stdio.h>
 
 int main() 

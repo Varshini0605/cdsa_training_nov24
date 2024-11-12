@@ -1,37 +1,19 @@
-// program that reverses the elements of an array in place using pointers.
+// check if a number is even
 #include <stdio.h>
 
-int main() 
-{
-    int n;
-    
-    scanf("%d", &n);
+int main() {
+    int number;
 
-    int arr[n];
+    // Ask user to enter a number
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-    for (int i = 0; i < n; i++) 
-    {
-        scanf("%d", &arr[i]);
+    // Check if the number is even or odd
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
     }
-
-    int *start = arr;
-    int *end = arr + n - 1;
-
-    while (start < end) 
-    {
-        int temp = *start;
-        *start = *end;
-        *end = temp;
-
-        start++;
-        end--;
-    }
-
-    for (int i = 0; i < n; i++) 
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
 
     return 0;
 }

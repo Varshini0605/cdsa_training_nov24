@@ -1,25 +1,21 @@
-#include<stdio.h>
-int findSmallestDigit(int number)
-{
-    int smallest = 9;
-    if(number < 0){
-        number = -number;
-    }
-    while (number > 0){
-        int digit = number % 10;
-        if (digit < smallest){
-            smallest = digit;
-        } 
-        number /= 10;
-    }
-    return smallest;
-}
-int main()
-{
+// check if a number is positive
+#include <stdio.h>
+
+int main() {
     int number;
+
+    // Ask user to enter a number
     printf("Enter a number: ");
     scanf("%d", &number);
-    int  smallestDigit = findSmallestDigit(number);
-    printf("The smallest digit in %d\n",number,smallestDigit);
+
+    // Check if the number is positive
+    if (number > 0) {
+        printf("%d is positive.\n", number);
+    } else if (number < 0) {
+        printf("%d is negative.\n", number);
+    } else {
+        printf("The number is zero.\n");
+    }
+
     return 0;
 }
