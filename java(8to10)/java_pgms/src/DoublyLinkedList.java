@@ -109,4 +109,4 @@ public class DoublyLinkedList {
         System.out.print("List after trying to remove 40 (Forward): ");
         list.printForward();  // Expected: 10 30
     }
-}
+
